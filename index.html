@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SportZone: catálogo digital de artículos deportivos en Sucre, Bolivia.">
+  <title>JHEREMAI | Deportes sin límites</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">ENVÍOS EN SUCRE · EQUÍPATE PARA SUPERAR TUS LÍMITES</div>
+  <header class="header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="SportZone, ir al inicio">
+      <span class="brand-mark">J<span>S</span></span>
+      <span class="brand-copy"><strong>JHEREMAI<span>SPORT</span></strong><small>DEPORTES SIN LÍMITES</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#catalogo">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+      <span class="cart-icon">🛒</span><span>Mi carrito</span><b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">TU ENERGÍA. TU PASIÓN. TU DEPORTE.</p>
+        <h1>EQUÍPATE PARA<br><span>IR MÁS LEJOS.</span></h1>
+        <p class="hero-text">Encuentra todo lo que necesitas para entrenar, competir y disfrutar cada movimiento.</p>
+        <a class="button button-primary" href="#catalogo">EXPLORAR CATÁLOGO <span>→</span></a>
+      </div>
+      <div class="hero-tag"><strong>SPORT</strong><span>IS A</span><strong>LIFESTYLE</strong></div>
+    </section>
+
+    <section class="benefits" aria-label="Beneficios">
+      <article><span class="benefit-icon">🚚</span><div><strong>ENTREGA COORDINADA</strong><small>Consulta cobertura en Sucre</small></div></article>
+      <article><span class="benefit-icon">🏅</span><div><strong>CALIDAD DEPORTIVA</strong><small>Productos para cada actividad</small></div></article>
+      <article><span class="benefit-icon">💬</span><div><strong>ATENCIÓN PERSONALIZADA</strong><small>Te ayudamos a elegir</small></div></article>
+    </section>
+
+    <section class="catalog section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow blue">SELECCIÓN JHEREMAI SPORT</p><h2>NUESTROS <span>PRODUCTOS</span></h2></div>
+        <p>Encuentra tu próximo favorito.</p>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="todos">Todos</button>
+          <button class="filter" data-category="calzado">Calzado</button>
+          <button class="filter" data-category="futbol">Fútbol</button>
+          <button class="filter" data-category="ropa">Ropa</button>
+          <button class="filter" data-category="accesorios">Accesorios</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto"></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="demo-note">* Catálogo demostrativo. Los productos, precios y datos de contacto son de ejemplo.</p>
+    </section>
+
+    <section class="promo">
+      <div><p class="eyebrow">NO HAY LÍMITES</p><h2>EL SIGUIENTE NIVEL<br>EMPIEZA CONTIGO.</h2><p>Prepárate, ponte en movimiento y disfruta el camino.</p></div>
+      <a class="button button-light" href="#catalogo">VER PRODUCTOS →</a>
+    </section>
+
+    <section class="about section-wrap" id="nosotros">
+      <div class="about-mark">JS<span>.</span></div>
+      <div><p class="eyebrow blue">QUIÉNES SOMOS</p><h2>DEPORTE PARA<br><span>TODOS.</span></h2>
+      <p>JHEREMAI SPORT es una tienda deportiva creada para reunir en un solo lugar artículos para quienes disfrutan mantenerse activos. Nuestro catálogo incluye opciones para fútbol, entrenamiento, running y actividades cotidianas.</p>
+      <p class="about-motto">Tu pasión merece el mejor equipo.</p></div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">S<span>Z</span></span><span class="brand-copy"><strong>JHEREMAI<span>SPORT</span></strong><small>DEPORTES SIN LÍMITES</small></span></a>
+      <div><h3>CONTACTO</h3><p>📍 Sucre, Bolivia</p><p>☎ +591 73407513</p><p>✉ jheremaifernandez@gmail.com</p></div>
+      <div><h3>HORARIOS</h3><p>Lunes a viernes</p><p>09:00 – 18:00</p><p>Sábados: 09:00 – 13:00</p></div>
+      <div><h3>SÍGUENOS</h3><div class="socials"><a href="#contacto" aria-label="Facebook">f</a><a href="#contacto" aria-label="Instagram">◎</a><a href="#contacto" aria-label="TikTok">♪</a></div><p class="footer-slogan">¡VIVE EL DEPORTE!</p></div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> SPORTZONE. Proyecto educativo de catálogo digital.</div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow blue">TU SELECCIÓN</p><h2>MI CARRITO</h2></div><button id="closeCart" class="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Todavía no agregaste productos.</p></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong id="cartTotal">Bs 0</strong></div><button id="checkoutButton" class="button button-primary full-width">FINALIZAR CONSULTA</button><small>La compra es simulada; no se procesa ningún pago.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
